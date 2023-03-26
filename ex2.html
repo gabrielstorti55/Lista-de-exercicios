@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex2.css">
+    <title>ex.2</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Multiplicação de tres numeros</h1>
+
+        <div class="input">
+            <input id="n1" type="number" placeholder="Primeiro número"> x
+        </div>
+
+        <div class="input">
+            <input id="n2" type="number" placeholder="Segundo número"> x
+        </div>
+
+        <div class="input">
+            <input id="n3" type="number" placeholder="terceiro número"> =
+        </div>
+        <div id="botao">
+            <button id="multiplicar" onclick="multiplicacao()"> Multiplicar</button> <br>
+        </div>
+        O resultado é: <span></span>
+    </div>
+
+    <script>
+        var n1 = document.querySelector('#n1')
+        var n2 = document.querySelector('#n2')
+        var n3 = document.querySelector('#n3')
+        var resultado = document.querySelector('span')
+
+        function multiplicacao() {
+            resultado.innerHTML = (n1.value) * (n2.value) * (n3.value)
+        }
+    </script>
+</body>
+</html>

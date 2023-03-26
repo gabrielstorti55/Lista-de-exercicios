@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex5.css">
+    <title>ex.5</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Desconto de 10%</h1>
+        <input type="number" id="preco" placeholder="Preço"> <br> <br>
+        <button onclick="darDesconto()">Aplicar desconto</button> <br>
+
+        Seu novo preço com 10% de desconto será de: <span></span>
+    </div>
+    <script>
+        var preco = document.querySelector('#preco')
+        var resultado = document.querySelector('span')
+
+        function darDesconto() {
+            resultado.innerHTML = (preco.value)*0.1
+        }
+    </script>
+</body>
+</html>

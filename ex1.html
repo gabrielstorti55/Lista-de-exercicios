@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="ex1.css">
+        <title>ex.1</title>
+    </head>
+    <body>
+        <div id="container">
+            <h1 class="titulo">Subtração</h1>
+
+            Primeiro número <br>
+            <input id="n1" type="number"> <br><br>
+            Segundo número <br>
+            <input id="n2" type="number"><br> <br>
+            <button onclick="sub()">Subtrair</button>
+            <br>
+            o resultado é: <span></span>
+        </div>
+
+        
+        <script>
+            var n1 = document.querySelector('#n1')
+            var n2 = document.querySelector('#n2')
+            var resultado = document.querySelector('span') 
+
+            function sub() {
+                resultado.innerHTML = n1.value - n2.value
+            }   
+
+        </script>
+
+    </body>
+
+</html>

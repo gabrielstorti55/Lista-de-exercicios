@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex8.css">
+    <title>ex.8</title>
+</head>
+<body>
+    <div id="container">
+        <h1>transforme seu peso de Kilo para Gramas</h1>
+        <input type="number" id="peso" placeholder="peso em Kilo"> <br> <br>
+        <button onclick="transformacao()"> transforme</button> <br>
+
+        seu peso em gramas sera de: <span></span>
+    </div>
+    <script>
+        var peso = document.querySelector('#peso')
+        var resultado = document.querySelector('span')
+
+        function transformacao() {
+            resultado.innerHTML =  Number(peso.value) * 1000 
+        }
+    </script>
+</body>
+</html>
